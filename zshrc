@@ -90,6 +90,7 @@ source $ZSH/oh-my-zsh.sh
 #alias cat=ccat
 PATH=/Applications/Postgres.app/Contents/Versions/10/bin/:~/.local/bin:$PATH
 source /usr/local/bin/virtualenvwrapper.sh
+alias ipy=ipython
 
 #export http_proxy=http://127.0.0.1:8118/
 #export https_proxy=$http_proxy
@@ -108,3 +109,4 @@ export SHELL='zsh'
 # 重定向问题
 export PYTHONIOENCODING='utf8' 
 export PATH="/usr/local/opt/node@8/bin:$PATH"
+
