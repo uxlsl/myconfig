@@ -66,7 +66,10 @@ set colorcolumn=80
 set tabstop=4 
 set softtabstop=4
 set shiftwidth=4
-
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
 let g:go_highlight_types = 1
+
+set hlsearch
+
+:hi Search ctermfg=234 ctermbg=214 guifg=#1E1E1E guibg=#FFAF00
