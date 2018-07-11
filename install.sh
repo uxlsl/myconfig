@@ -15,3 +15,7 @@ echo 'source ~/.autoenv/activate.sh' >> ~/.zshrc
 echo 'export WORKON_HOME=$HOME/.virtualenvs' >> ~/.zshrc
 echo 'export PROJECT_HOME=$HOME/Devel' >> ~/.zshrc
 echo 'source /usr/local/bin/virtualenvwrapper.sh' >> ~/.zshrc
+
+mkdir ~/.pip/
+
+cp pip.conf ~/.pip/
