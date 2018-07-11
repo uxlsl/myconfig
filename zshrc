@@ -109,4 +109,5 @@ export SHELL='zsh'
 # 重定向问题
 export PYTHONIOENCODING='utf8' 
 export PATH="/usr/local/opt/node@8/bin:$PATH"
-
+export CHEAT_EDITOR=vim
+export EDITOR=vim
