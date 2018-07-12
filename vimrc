@@ -77,3 +77,7 @@ let g:go_highlight_types = 1
 set hlsearch
 
 :hi Search ctermfg=234 ctermbg=214 guifg=#1E1E1E guibg=#FFAF00
+
+nmap <space>1 :only<CR>
+nmap <space>2 :split<CR>
+nmap <space>3 :vsplit<CR>
