@@ -7,6 +7,18 @@
 + cheat 查询一些常用指令
 
 
+## 时间同步
+
+archlinux
+
+
+```
+
+sudo timedatectl set-ntp true
+
+```
+
+
 ## 喜欢的软件
 
 http://gnomepomodoro.org/
