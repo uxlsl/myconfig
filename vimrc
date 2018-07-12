@@ -81,3 +81,7 @@ set hlsearch
 nmap <space>1 :only<CR>
 nmap <space>2 :split<CR>
 nmap <space>3 :vsplit<CR>
+nmap <c-h> <c-w>h
+nmap <c-j> <c-w>j
+nmap <c-k> <c-w>k
+nmap <c-l> <c-w>l
