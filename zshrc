@@ -88,6 +88,8 @@ source $ZSH/oh-my-zsh.sh
 #
 
 #alias cat=ccat
+#
+alias xclip='xclip -sel clip'
 PATH=/Applications/Postgres.app/Contents/Versions/10/bin/:~/.local/bin:$PATH
 source /usr/local/bin/virtualenvwrapper.sh
 alias ipy=ipython
@@ -111,3 +113,5 @@ export PYTHONIOENCODING='utf8'
 export PATH="/usr/local/opt/node@8/bin:$PATH"
 export CHEAT_EDITOR=vim
 export EDITOR=vim
+
+

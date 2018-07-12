@@ -39,6 +39,10 @@ Plug 'ervandew/supertab'
 
 Plug 'townk/vim-autoclose'
 
+Plug 'plasticboy/vim-markdown'
+
+Plug 'godlygeek/tabular'
+
 " Initialize plugin system
 call plug#end()
 

@@ -19,3 +19,6 @@ echo 'source /usr/local/bin/virtualenvwrapper.sh' >> ~/.zshrc
 mkdir ~/.pip/
 
 cp pip.conf ~/.pip/
+
+
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -

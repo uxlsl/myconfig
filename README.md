@@ -5,3 +5,8 @@
 + zshrc on-my-zsh 配置
 + pip.conf pip 的配置
 + cheat 查询一些常用指令
+
+
+## 喜欢的软件
+
+http://gnomepomodoro.org/
