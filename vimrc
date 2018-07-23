@@ -85,3 +85,5 @@ nmap <c-h> <c-w>h
 nmap <c-j> <c-w>j
 nmap <c-k> <c-w>k
 nmap <c-l> <c-w>l
+" 使import from import 能正常工作
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
