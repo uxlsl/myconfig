@@ -87,3 +87,5 @@ nmap <c-k> <c-w>k
 nmap <c-l> <c-w>l
 " 使import from import 能正常工作
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+
+autocmd FileType  python autocmd BufWritePre <buffer> %s/\s\+$//e
