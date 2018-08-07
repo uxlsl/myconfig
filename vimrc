@@ -89,3 +89,4 @@ nmap <c-l> <c-w>l
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 autocmd FileType  python autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd BufWritePre *.py 0,$!yapf
