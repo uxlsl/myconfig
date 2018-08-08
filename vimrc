@@ -43,6 +43,8 @@ Plug 'plasticboy/vim-markdown'
 
 Plug 'godlygeek/tabular'
 
+Plug 'Yggdroot/indentLine'
+
 " Initialize plugin system
 call plug#end()
 
