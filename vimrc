@@ -43,6 +43,10 @@ Plug 'plasticboy/vim-markdown'
 
 Plug 'godlygeek/tabular'
 
+" 检查vim 是否有conceal
+Plug 'Yggdroot/indentLine'
+
+
 " Initialize plugin system
 call plug#end()
 
