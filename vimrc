@@ -45,6 +45,8 @@ Plug 'godlygeek/tabular'
 
 Plug 'Yggdroot/indentLine'
 
+Plug 'mileszs/ack.vim'
+
 " Initialize plugin system
 call plug#end()
 
@@ -54,6 +56,8 @@ let g:ctrlp_cmd = 'CtrlP'
 let mapleader = ","
 
 nmap <F8> :TagbarToggle<CR>
+nmap <F3> :cprevious<CR>
+nmap <F4> :cnext<CR>
 
 let g:indentLine_color_term = 239
 
