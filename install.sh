@@ -22,3 +22,6 @@ cp pip.conf ~/.pip/
 
 
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+
+# 解决中文名文件问题
+git config --global core.quotepath false 
