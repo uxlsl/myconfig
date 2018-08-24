@@ -47,6 +47,8 @@ Plug 'Yggdroot/indentLine'
 
 Plug 'mileszs/ack.vim'
 
+Plug 'junegunn/goyo.vim'
+
 " Initialize plugin system
 call plug#end()
 
