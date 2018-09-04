@@ -25,3 +25,9 @@ cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 
 # 解决中文名文件问题
 git config --global core.quotepath false 
+
+
+git clone https://aur.archlinux.org/google-chrome.git
+cd google-chrome
+makepkg -s
+suod pacman -U google
