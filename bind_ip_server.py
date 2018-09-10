@@ -10,7 +10,7 @@ def hello():
     sign = os.environ.get('sign')
     if sign != request.args.get('sign'):
         return 'fail'
-    cmd = 'iptables -I INPUT -p tcp -s {}  --dport 8118 -j ACCEPT'.format(request.remote_addr)
+    cmd = 'iptables -I INPUT -p tcp -s {}  --dport 8118 -j ACCEPT'.format(request.environ.get('HTTP_X_REAL_IP'))
     try:
         subprocess.check_call(cmd, shell=True)
         return "success"
