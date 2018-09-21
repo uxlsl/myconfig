@@ -30,4 +30,6 @@ git config --global core.quotepath false
 git clone https://aur.archlinux.org/google-chrome.git
 cd google-chrome
 makepkg -s
-suod pacman -U google
+sudo pacman -U google
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
