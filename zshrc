@@ -89,7 +89,7 @@ source $ZSH/oh-my-zsh.sh
 
 #alias cat=ccat
 #
-alias xclip='xclip -sel clip'
+alias xclip='xclip -selection clipboard'
 PATH=/Applications/Postgres.app/Contents/Versions/10/bin/:~/.local/bin:$PATH
 source /usr/local/bin/virtualenvwrapper.sh
 alias ipy=ipython
