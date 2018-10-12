@@ -33,3 +33,6 @@ makepkg -s
 sudo pacman -U google
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# 安装mitmproxy cert
+certutil -d sql:$HOME/.pki/nssdb -A -t C -n mitmproxy -i ~/.mitmproxy/mitmproxy-ca-cert.pem
