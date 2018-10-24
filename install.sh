@@ -39,4 +39,5 @@ certutil -d sql:$HOME/.pki/nssdb -A -t C -n mitmproxy -i ~/.mitmproxy/mitmproxy-
 
 # 安装zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
+# 安装CloudClip
+#git clone https://github.com/skywind3000/CloudClip.git
