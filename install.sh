@@ -22,3 +22,17 @@ cp pip.conf ~/.pip/
 
 
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+
+# 解决中文名文件问题
+git config --global core.quotepath false 
+
+
+git clone https://aur.archlinux.org/google-chrome.git
+cd google-chrome
+makepkg -s
+sudo pacman -U google
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# 安装mitmproxy cert
+certutil -d sql:$HOME/.pki/nssdb -A -t C -n mitmproxy -i ~/.mitmproxy/mitmproxy-ca-cert.pem

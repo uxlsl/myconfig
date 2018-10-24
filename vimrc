@@ -43,9 +43,11 @@ Plug 'plasticboy/vim-markdown'
 
 Plug 'godlygeek/tabular'
 
-" 检查vim 是否有conceal
 Plug 'Yggdroot/indentLine'
 
+Plug 'mileszs/ack.vim'
+
+Plug 'junegunn/goyo.vim'
 
 " Initialize plugin system
 call plug#end()
@@ -56,6 +58,8 @@ let g:ctrlp_cmd = 'CtrlP'
 let mapleader = ","
 
 nmap <F8> :TagbarToggle<CR>
+nmap <F3> :cprevious<CR>
+nmap <F4> :cnext<CR>
 
 let g:indentLine_color_term = 239
 
