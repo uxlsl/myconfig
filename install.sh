@@ -43,3 +43,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 #git clone https://github.com/skywind3000/CloudClip.git
 
 pip install better_exceptions --user
+
+# 安装xflux-gui
+# https://github.com/xflux-gui/fluxgui
+
