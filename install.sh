@@ -47,3 +47,5 @@ pip install better_exceptions --user
 # 安装xflux-gui
 # https://github.com/xflux-gui/fluxgui
 
+mkdir -p ~/.config/matplotlib/
+cp matplotlibrc ~/.config/matplotlib/
