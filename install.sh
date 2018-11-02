@@ -49,3 +49,8 @@ pip install better_exceptions --user
 
 mkdir -p ~/.config/matplotlib/
 cp matplotlibrc ~/.config/matplotlib/
+rm ~/.cache/matplotlib
+mkdir -p ~/.local/share/fonts
+cp SimHei.ttf ~/.local/share/fonts
+mkdir ~/.fonts/
+cp SimHei.ttf ~/.fonts
