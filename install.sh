@@ -54,3 +54,6 @@ mkdir -p ~/.local/share/fonts
 cp SimHei.ttf ~/.local/share/fonts
 mkdir ~/.fonts/
 cp SimHei.ttf ~/.fonts
+
+# 安装 man 的简化版，参考工具tldr 
+pip install tldr --user
