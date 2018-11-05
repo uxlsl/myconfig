@@ -57,3 +57,6 @@ cp SimHei.ttf ~/.fonts
 
 # 安装 man 的简化版，参考工具tldr 
 pip install tldr --user
+
+# 安装mackup 备份linux,和还原linux
+pip install mackup 
