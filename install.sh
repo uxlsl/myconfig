@@ -59,6 +59,9 @@ cp SimHei.ttf ~/.fonts
 pip install tldr --user
 
 # 安装mackup 备份linux,和还原linux
-pip install mackup 
+pip install mackup  --user
 # 方便一眼看到当前系统的状态
-pip install glances
+pip install glances --user
+
+# 使用repren重命名文件
+pip install repren --user
