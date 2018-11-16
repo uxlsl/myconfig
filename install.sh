@@ -65,3 +65,11 @@ pip install glances --user
 
 # 使用repren重命名文件
 pip install repren --user
+
+# 使用ngrok做反回代理
+git clone git@github.com:inconshreveable/ngrok.git
+cd ngrok && make
+
+# ./bin/ngrokd -domain linsl2018.top -httpAddr  -httpsAddr
+
+# 安装ranger 
