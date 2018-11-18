@@ -94,6 +94,7 @@ PATH=/Applications/Postgres.app/Contents/Versions/10/bin/:~/.local/bin:$PATH
 source /usr/local/bin/virtualenvwrapper.sh
 alias ipy=ipython
 alias open=xdg-open
+alias docker-gc='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc spotify/docker-gc'
 
 #export http_proxy=http://127.0.0.1:8118/
 #export https_proxy=$http_proxy
@@ -115,3 +116,4 @@ export PATH="/usr/local/opt/node@8/bin:$PATH"
 export CHEAT_EDITOR=vim
 export EDITOR=vim
 export BETTER_EXCEPTIONS=1  # Linux / OSX
+
