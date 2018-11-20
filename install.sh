@@ -73,3 +73,6 @@ cd ngrok && make
 # ./bin/ngrokd -domain linsl2018.top -httpAddr  -httpsAddr
 
 # 安装ranger 
+
+# 终端看使用
+npm install -g vtop
