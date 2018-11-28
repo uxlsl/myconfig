@@ -16,8 +16,8 @@ lsb_dist=$( get_distribution )
 lsb_dist="$(echo "$lsb_dist" | tr '[:upper:]' '[:lower:]')"
 case "$lsb_dist" in
 	ubuntu|debian)
-		apt update
-		install_cmd='apt install -y'
+		apt-get update
+		install_cmd='apt-get install -y'
 	;;
 	centos)
 		install_cmd='yum install -y'
@@ -33,9 +33,9 @@ fi
 
 echo $install_cmd
 
-$install_cmd git python-pip zsh
+$install_cmd git python-pip zsh curl tmux go
 
-sudo pip install virtualenvwrapper
+pip install virtualenvwrapper --user
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -51,7 +51,7 @@ echo 'source ~/.autoenv/activate.sh' >> ~/.zshrc
 
 echo 'export WORKON_HOME=$HOME/.virtualenvs' >> ~/.zshrc
 echo 'export PROJECT_HOME=$HOME/Devel' >> ~/.zshrc
-echo 'source /usr/local/bin/virtualenvwrapper.sh' >> ~/.zshrc
+echo 'source ./.local/bin/virtualenvwrapper.sh' >> ~/.zshrc
 
 mkdir ~/.pip/
 
