@@ -68,3 +68,6 @@ cd ngrok && make
 # 安装ranger 
 git clone https://github.com/vim/vim.git
 cd vim &&./configure --with-features=big  --enable-pythoninterp=yes && make && make install
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh ./get-docker.sh
