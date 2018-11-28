@@ -6,7 +6,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 rm ~/.zshrc
-ln -s zshrc ~/.zshrc
+cp zshrc ~/.zshrc
 
 git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv
 echo 'source ~/.autoenv/activate.sh' >> ~/.zshrc
@@ -21,16 +21,9 @@ mkdir ~/.pip/
 cp pip.conf ~/.pip/
 
 
-cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-
 # 解决中文名文件问题
 git config --global core.quotepath false 
 
-
-git clone https://aur.archlinux.org/google-chrome.git
-cd google-chrome
-makepkg -s
-sudo pacman -U google
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
@@ -76,3 +69,10 @@ cd ngrok && make
 
 # 终端看使用
 npm install -g vtop
+git clone https://github.com/vim/vim.git
+cd vim &&./configure --with-features=big  --enable-pythoninterp=yes && make && make install
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh ./get-docker.sh
+
+pip install youdao --user
