@@ -1,5 +1,34 @@
 #!/bin/sh
+set -e
 
+get_distribution() {
+	lsb_dist=""
+	# Every system that we officially support has /etc/os-release
+	if [ -r /etc/os-release ]; then
+		lsb_dist="$(. /etc/os-release && echo "$ID")"
+	fi
+	# Returning an empty string here should be alright since the
+	# case statements don't act unless you provide an actual value
+	echo "$lsb_dist"
+}
+
+lsb_dist=$( get_distribution )
+lsb_dist="$(echo "$lsb_dist" | tr '[:upper:]' '[:lower:]')"
+case "$lsb_dist" in
+	ubuntu|debian)
+		install_cmd='sudo apt install -y'
+	;;
+	centos)
+		install_cmd='sudo yum install -y'
+	;;
+	arch)
+		install_cmd='sudo pacman -S'
+	;;
+esac 
+echo $install_cmd
+
+$install_cmd git python-pip zsh
+sudo pip install virtualenvwrapper
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
@@ -68,10 +97,10 @@ cd ngrok && make
 # 安装ranger 
 
 # 终端看使用
-npm install -g vtop
+#npm install -g vtop
 git clone https://github.com/vim/vim.git
 cd vim &&./configure --with-features=big  --enable-pythoninterp=yes && make && make install
-
+cd ..
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh ./get-docker.sh
 
