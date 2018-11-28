@@ -16,19 +16,27 @@ lsb_dist=$( get_distribution )
 lsb_dist="$(echo "$lsb_dist" | tr '[:upper:]' '[:lower:]')"
 case "$lsb_dist" in
 	ubuntu|debian)
-		install_cmd='sudo apt install -y'
+		apt update
+		install_cmd='apt install -y'
 	;;
 	centos)
-		install_cmd='sudo yum install -y'
+		install_cmd='yum install -y'
 	;;
 	arch)
-		install_cmd='sudo pacman -S'
+		install_cmd='pacman -S'
 	;;
 esac 
+
+if [[ $EUID -ne 0 ]]; then
+	$install_cmd="sudo $install_cmd"
+fi
+
 echo $install_cmd
 
 $install_cmd git python-pip zsh
+
 sudo pip install virtualenvwrapper
+
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
