@@ -111,6 +111,7 @@ cd vim &&./configure --with-features=big  --enable-pythoninterp=yes && make && m
 cd ..
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh ./get-docker.sh
+# 让一般用户使用docker
 sudo usermod -aG docker lin
 
 pip install youdao --user
