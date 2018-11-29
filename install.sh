@@ -71,5 +71,6 @@ cd vim &&./configure --with-features=big  --enable-pythoninterp=yes && make && m
 
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh ./get-docker.sh
+sudo usermod -aG docker lin
 
 pip install youdao --user
