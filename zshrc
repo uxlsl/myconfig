@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/linsongling/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -90,8 +90,8 @@ source $ZSH/oh-my-zsh.sh
 #alias cat=ccat
 #
 alias xclip='xclip -selection clipboard'
-PATH=/Applications/Postgres.app/Contents/Versions/10/bin/:~/.local/bin:$PATH
-source /usr/local/bin/virtualenvwrapper.sh
+#PATH=/Applications/Postgres.app/Contents/Versions/10/bin/:~/.local/bin:$PATH
+source $HOME/.local/bin/virtualenvwrapper.sh
 alias ipy=ipython
 alias open=xdg-open
 alias docker-gc='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc spotify/docker-gc'
@@ -103,11 +103,11 @@ alias -s bz2='tar -xjvf' # 快速打开bz2文件
 #export https_proxy=$http_proxy
 #
 #
-JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/"
+#JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/"
 
-export JAVA_HOME
+#export JAVA_HOME
 
-CLASS_PATH="$JAVA_HOME/lib"
+#CLASS_PATH="$JAVA_HOME/lib"
 
 export EDITOR='vim'
 
