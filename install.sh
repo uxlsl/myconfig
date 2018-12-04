@@ -20,6 +20,7 @@ case "$lsb_dist" in
 		install_cmd='apt-get install -y'
 	;;
 	centos)
+		yum install epel-release
 		install_cmd='yum install -y'
 	;;
 	arch)
@@ -33,7 +34,7 @@ fi
 
 echo $install_cmd
 
-$install_cmd git python-pip zsh curl tmux go
+$install_cmd git python-pip zsh curl tmux golang
 
 pip install virtualenvwrapper --user
 
