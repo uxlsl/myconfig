@@ -19,8 +19,10 @@ case "$lsb_dist" in
 		apt-get update
 		install_cmd='apt-get install -y'
 	;;
-	centos)
-		yum install epel-release
+	centor|fedora)
+		sudo yum install epel-release python-devel
+		sudo yum install ncurses-devel
+		sudo dnf install redhat-rpm-config
 		install_cmd='yum install -y'
 	;;
 	arch)
