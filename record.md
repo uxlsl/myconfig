@@ -27,3 +27,53 @@ vboxmanage list systemproperties | grep folder 可通过这条命令查出
 iptables -I INPUT -p tcp --dport 80 -j ACCEPT
 
 ```
+
+
+## docker 服务端设置代理
+
+1.
+
+```
+
+sudo mkdir -p /etc/systemd/system/docker.service.d
+
+```
+
+2. 
+
+设置文件:
+/etc/systemd/system/docker.service.d/http-proxy.conf
+
+```
+
+[Service]
+Environment="HTTP_PROXY=http://proxy.example.com:80/"
+
+
+```
+
+
+3.
+
+```
+
+sudo systemctl daemon-reload
+
+```
+
+
+4.
+
+```
+
+sudo systemctl daemon-reload
+
+```
+
+5. 
+
+```
+
+sudo systemctl restart docker
+
+```
