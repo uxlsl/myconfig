@@ -77,3 +77,11 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 
 ```
+
+## bash强键参数set
+
+```
+
+set -euxo pipefail
+
+```
