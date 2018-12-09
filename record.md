@@ -85,3 +85,12 @@ sudo systemctl restart docker
 set -euxo pipefail
 
 ```
+
+
+## ubuntu 设置hostname
+
+```
+
+hostnamectl set-hostname new_host_name
+
+```
