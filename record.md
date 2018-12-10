@@ -94,3 +94,13 @@ set -euxo pipefail
 hostnamectl set-hostname new_host_name
 
 ```
+
+
+## centos 系统常用安装包
+
+```
+
+sudo yum install -y zlib-devel openssl-devel libxslt-devel libxslt libxml2 libxml2-devel \
+    sqlite-devel readline-devel xz-devel  bzip2-devel sqlite-devel
+
+```
