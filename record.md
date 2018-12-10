@@ -104,3 +104,13 @@ sudo yum install -y zlib-devel openssl-devel libxslt-devel libxslt libxml2 libxm
     sqlite-devel readline-devel xz-devel  bzip2-devel sqlite-devel
 
 ```
+
+
+## dockerfile 内容常加部份
+
+
+```
+
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+```
