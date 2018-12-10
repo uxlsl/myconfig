@@ -78,6 +78,24 @@ sudo systemctl restart docker
 
 ```
 
+https://docs.docker.com/config/daemon/systemd/#httphttps-proxy
+
+
+## docker镜像加速
+
+```
+
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://1bkzzdn7.mirror.aliyuncs.com"]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+
+```
+
 ## bash强键参数set
 
 ```
@@ -114,3 +132,18 @@ sudo yum install -y zlib-devel openssl-devel libxslt-devel libxslt libxml2 libxm
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 ```
+
+
+## kubectl 使用
+
+### kubectl 删除deployment资源
+
+
+```
+
+kubectl get deployment
+kubectl delete deployments/my-nginx
+
+```
+
+
