@@ -98,3 +98,7 @@ let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 autocmd FileType  python autocmd BufWritePre <buffer> %s/\s\+$//e
 autocmd BufWritePre *.py 0,$!yapf
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
