@@ -147,3 +147,8 @@ kubectl delete deployments/my-nginx
 ```
 
 
+
+## sshd 的一些配置
+
+PermitRootLogin 这个选项可以使用root无法登录
+PasswordAuthentication 这个选项让ssh-copy-id不能成功
