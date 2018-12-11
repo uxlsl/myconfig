@@ -146,6 +146,14 @@ kubectl delete deployments/my-nginx
 
 ```
 
+### kubectl 获取pod 的ip
+
+```
+
+kubectl get pod -o wide
+
+```
+
 
 
 ## sshd 的一些配置
