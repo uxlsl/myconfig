@@ -155,6 +155,9 @@ kubectl get pod -o wide
 ```
 
 
+## k8s一些设计思想
+
+通过service访问pod
 
 ## sshd 的一些配置
 
