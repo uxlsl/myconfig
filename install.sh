@@ -23,6 +23,8 @@ case "$lsb_dist" in
 		sudo yum install epel-release python-devel
 		sudo yum install ncurses-devel
 		sudo dnf install redhat-rpm-config
+		sudo yum groupinstall "Development Tools"
+		sudo yum install gcc-c++
 		install_cmd='yum install -y'
 	;;
 	arch)
