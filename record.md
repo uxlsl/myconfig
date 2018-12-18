@@ -334,3 +334,6 @@ logger.addHandler(handler)
 logger.info('Hello baby')
 
 ```
+https://michaelheap.com/using-ini-config-with-python-logger/
+https://realpython.com/python-logging/
+https://fangpenlin.com/posts/2012/08/26/good-logging-practice-in-python/
