@@ -354,6 +354,18 @@ https://michaelheap.com/using-ini-config-with-python-logger/
 https://realpython.com/python-logging/
 https://fangpenlin.com/posts/2012/08/26/good-logging-practice-in-python/
 
+
+## k8s
+
+
+### k8s dashboard, token 
+```
+
+kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user | awk '{print $1}')
+
+```
+
+
 ## 收藏链接
 
 http://blog.lanyus.com/6.html
