@@ -366,6 +366,42 @@ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | gre
 ```
 
 
+## golang 
+
+### http设置请求  
+
+```go
+
+package main
+
+import (
+	"fmt"
+	"io/ioutil"
+	"net/http"
+)
+
+func main() {
+	client := &http.Client{
+	}
+	req, err := http.NewRequest("GET", "http://httpbin.org/headers", nil)
+	req.Header.Add("If-None-Match", `W/"wyzzy"`)
+	resp, err := client.Do(req)
+
+	if err != nil {
+		// handle error
+	}
+	//程序在使用完回复后必须关闭回复的主体。
+	defer resp.Body.Close()
+
+	body, _ := ioutil.ReadAll(resp.Body)
+	fmt.Println(string(body))
+
+
+}
+
+```
+
+
 ## 收藏链接
 
 http://blog.lanyus.com/6.html
