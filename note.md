@@ -409,3 +409,4 @@ http://blog.lanyus.com/6.html
 k8s
 
 https://github.com/kubernetes/dashboard.git
+http://kubernetesbyexample.com/
