@@ -96,6 +96,22 @@ sudo systemctl restart docker
 
 ```
 
+
+## docker 设置私有代理
+
+1. 修改/etc/docker/daemon, 增加这一行
+
+"insecure-registries" : ["xxxxxxxxxxx"]
+
+2. 命名标签
+
+docker tag foobar xxxxxxx/foobar
+
+3. 推送
+
+docker push xxxxxxx/foobar
+
+
 ## bash强键参数set
 
 ```
