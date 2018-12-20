@@ -406,6 +406,9 @@ func main() {
 
 http://blog.lanyus.com/6.html
 
+nfs
+https://www.cnblogs.com/mchina/archive/2013/01/03/2840040.html
+
 k8s
 
 https://github.com/kubernetes/dashboard.git
