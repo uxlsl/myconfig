@@ -149,6 +149,25 @@ RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 ```
 
+## docker 日志处理
+
+```
+
+➜  ~ cat /etc/docker/daemon.json 
+{
+  "log-driver": "json-file",
+  "log-opts": {"max-size": "10m", "max-file": "3"}
+}
+
+```
+
+检查日志
+
+```
+
+du -sh /var/lib/docker/containers/*/*-json.log
+
+```
 
 ## kubectl 使用
 
