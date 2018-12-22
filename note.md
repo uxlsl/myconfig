@@ -422,6 +422,7 @@ k8s
 
 https://github.com/kubernetes/dashboard.git
 http://kubernetesbyexample.com/
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 
 stackoverflow
 https://stackoverflow.com/questions/7979548/how-to-render-my-textarea-with-wtforms/23256596
