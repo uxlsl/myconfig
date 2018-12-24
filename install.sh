@@ -120,3 +120,7 @@ sudo sh ./get-docker.sh
 sudo usermod -aG docker lin
 
 pip install youdao --user
+#godoc -http=:6060
+
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
