@@ -421,12 +421,21 @@ func main() {
 ```
 ## linux 命令
 
-显示能加载的
+显示nfs能加载的
 
 ```
 
 showmount -e 10.30.4.100
 
+
+```
+
+## golang 打开帮助文档
+
+```
+
+# dnf install golang-docs
+godoc -http=:6060
 
 ```
 
@@ -444,3 +453,4 @@ http://kubernetesbyexample.com/
 
 stackoverflow
 https://stackoverflow.com/questions/7979548/how-to-render-my-textarea-with-wtforms/23256596
+
