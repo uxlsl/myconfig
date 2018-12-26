@@ -373,6 +373,13 @@ https://michaelheap.com/using-ini-config-with-python-logger/
 https://realpython.com/python-logging/
 https://fangpenlin.com/posts/2012/08/26/good-logging-practice-in-python/
 
+## python ipython 屏蔽debug信息
+
+```
+
+logging.getLogger('parso.python.diff').disabled=True
+
+```
 
 ## k8s
 
