@@ -438,7 +438,7 @@ func main() {
 }
 
 ```
-## linux 命令
+## linux 系统
 
 显示nfs能加载的
 
@@ -448,6 +448,25 @@ showmount -e 10.30.4.100
 
 
 ```
+
+### 配置limits(打开文件数)
+
+
+/etc/security/limits.conf 
+
+```
+
+* soft    nofile  65535
+* hard    nofile  65535
+
+```
+
+/etc/systemd/system.conf 
+/etc/systemd/user.conf
+
+DefaultLimitNOFILE=65535
+
+
 
 ## golang 打开帮助文档
 
