@@ -381,6 +381,18 @@ logging.getLogger('parso.python.diff').disabled=True
 
 ```
 
+### python 安装 pycurl
+
+```
+
+yum install libcurl-devel
+export PYCURL_SSL_LIBRARY=nss
+export LDFLAGS=-L/usr/local/opt/openssl/lib
+export CPPFLAGS=-I/usr/local/opt/openssl/include
+pip install pycurl --compile --no-cache-dir
+
+```
+
 ## k8s
 
 
