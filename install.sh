@@ -20,11 +20,14 @@ case "$lsb_dist" in
 		install_cmd='apt-get install -y'
 	;;
 	centor|fedora)
+		sudo yum install -y zlib-devel openssl-devel libxslt-devel libxslt libxml2 libxml2-devel \
+    sqlite-devel readline-devel xz-devel  bzip2-devel sqlite-devel
 		sudo yum install epel-release python-devel
 		sudo yum install ncurses-devel
 		sudo dnf install redhat-rpm-config
 		sudo yum groupinstall "Development Tools"
 		sudo yum install gcc-c++
+		sudo dnf install ruby-devel
 		install_cmd='yum install -y'
 	;;
 	arch)
@@ -124,3 +127,4 @@ pip install youdao --user
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+gem install redis-stat
