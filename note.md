@@ -467,6 +467,16 @@ showmount -e 10.30.4.100
 DefaultLimitNOFILE=65535
 
 
+安装bbr 到openvz
+
+```
+
+wget https://raw.githubusercontent.com/kuoruan/shell-scripts/master/ovz-bbr/ovz-bbr-installer.sh
+chmod +x ovz-bbr-installer.sh
+./ovz-bbr-installer.sh
+
+```
+
 
 ## golang 打开帮助文档
 
