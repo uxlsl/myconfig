@@ -486,6 +486,13 @@ chmod +x ovz-bbr-installer.sh
 godoc -http=:6060
 
 ```
+## git 不用输入密码做法
+
+```
+
+git config credential.helper store
+
+```
 
 ## 收藏链接
 
