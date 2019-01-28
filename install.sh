@@ -30,6 +30,7 @@ case "$lsb_dist" in
 		sudo dnf install -y ruby-devel
 		sudo dnf install -y ncdu  
 		sudo dnf install -y fd-find
+		sudo dnf module install bat  -y
 		install_cmd='yum install -y'
 	;;
 	arch)
