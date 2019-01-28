@@ -22,12 +22,13 @@ case "$lsb_dist" in
 	centor|fedora)
 		sudo yum install -y zlib-devel openssl-devel libxslt-devel libxslt libxml2 libxml2-devel \
     sqlite-devel readline-devel xz-devel  bzip2-devel sqlite-devel
-		sudo yum install epel-release python-devel
-		sudo yum install ncurses-devel
-		sudo dnf install redhat-rpm-config
-		sudo yum groupinstall "Development Tools"
-		sudo yum install gcc-c++
-		sudo dnf install ruby-devel
+		sudo yum install -y epel-release python-devel
+		sudo yum install -y ncurses-devel
+		sudo dnf install -y redhat-rpm-config
+		sudo yum groupinstall -y "Development Tools"
+		sudo yum install -y gcc-c++
+		sudo dnf install -y ruby-devel
+		sudo dnf install -y ncdu  
 		install_cmd='yum install -y'
 	;;
 	arch)
