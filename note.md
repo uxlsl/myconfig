@@ -499,6 +499,7 @@ git config credential.helper store
 http://blog.lanyus.com/6.html
 
 nfs
+
 https://www.cnblogs.com/mchina/archive/2013/01/03/2840040.html
 
 k8s
@@ -510,3 +511,5 @@ https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 stackoverflow
 https://stackoverflow.com/questions/7979548/how-to-render-my-textarea-with-wtforms/23256596
 
+python
+http://dongweiming.github.io/Expert-Python/#1
