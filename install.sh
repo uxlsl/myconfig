@@ -29,6 +29,7 @@ case "$lsb_dist" in
 		sudo yum install -y gcc-c++
 		sudo dnf install -y ruby-devel
 		sudo dnf install -y ncdu  
+		sudo dnf install -y fd-find
 		install_cmd='yum install -y'
 	;;
 	arch)
