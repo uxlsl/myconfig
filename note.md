@@ -373,6 +373,25 @@ https://michaelheap.com/using-ini-config-with-python-logger/
 https://realpython.com/python-logging/
 https://fangpenlin.com/posts/2012/08/26/good-logging-practice-in-python/
 
+## python ipython 屏蔽debug信息
+
+```
+
+logging.getLogger('parso.python.diff').disabled=True
+
+```
+
+### python 安装 pycurl
+
+```
+
+yum install libcurl-devel
+export PYCURL_SSL_LIBRARY=nss
+export LDFLAGS=-L/usr/local/opt/openssl/lib
+export CPPFLAGS=-I/usr/local/opt/openssl/include
+pip install pycurl --compile --no-cache-dir
+
+```
 
 ## k8s
 
@@ -419,9 +438,9 @@ func main() {
 }
 
 ```
-## linux 命令
+## linux 系统
 
-显示能加载的
+显示nfs能加载的
 
 ```
 
@@ -430,11 +449,57 @@ showmount -e 10.30.4.100
 
 ```
 
+### 配置limits(打开文件数)
+
+
+/etc/security/limits.conf 
+
+```
+
+* soft    nofile  65535
+* hard    nofile  65535
+
+```
+
+/etc/systemd/system.conf 
+/etc/systemd/user.conf
+
+DefaultLimitNOFILE=65535
+
+
+安装bbr 到openvz
+
+```
+
+wget https://raw.githubusercontent.com/kuoruan/shell-scripts/master/ovz-bbr/ovz-bbr-installer.sh
+chmod +x ovz-bbr-installer.sh
+./ovz-bbr-installer.sh
+
+```
+
+
+## golang 打开帮助文档
+
+```
+
+# dnf install golang-docs
+godoc -http=:6060
+
+```
+## git 不用输入密码做法
+
+```
+
+git config credential.helper store
+
+```
+
 ## 收藏链接
 
 http://blog.lanyus.com/6.html
 
 nfs
+
 https://www.cnblogs.com/mchina/archive/2013/01/03/2840040.html
 
 k8s
@@ -445,3 +510,6 @@ https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 
 stackoverflow
 https://stackoverflow.com/questions/7979548/how-to-render-my-textarea-with-wtforms/23256596
+
+python
+http://dongweiming.github.io/Expert-Python/#1

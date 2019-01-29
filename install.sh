@@ -20,11 +20,17 @@ case "$lsb_dist" in
 		install_cmd='apt-get install -y'
 	;;
 	centor|fedora)
-		sudo yum install epel-release python-devel
-		sudo yum install ncurses-devel
-		sudo dnf install redhat-rpm-config
-		sudo yum groupinstall "Development Tools"
-		sudo yum install gcc-c++
+		sudo yum install -y zlib-devel openssl-devel libxslt-devel libxslt libxml2 libxml2-devel \
+    sqlite-devel readline-devel xz-devel  bzip2-devel sqlite-devel
+		sudo yum install -y epel-release python-devel
+		sudo yum install -y ncurses-devel
+		sudo dnf install -y redhat-rpm-config
+		sudo yum groupinstall -y "Development Tools"
+		sudo yum install -y gcc-c++
+		sudo dnf install -y ruby-devel
+		sudo dnf install -y ncdu  
+		sudo dnf install -y fd-find
+		sudo dnf module install bat  -y
 		install_cmd='yum install -y'
 	;;
 	arch)
@@ -122,3 +128,9 @@ sudo usermod -aG docker lin
 pip install youdao --user
 # 使用cow 自动切换代理
 go get github.com/cyfdecyf/cow
+=======
+#godoc -http=:6060
+
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+gem install redis-stat

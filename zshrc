@@ -101,6 +101,8 @@ alias docker-gc='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v
 
 alias -s gz='tar -xzvf' # 快速打开gz文件
 alias -s bz2='tar -xjvf' # 快速打开bz2文件
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+
 
 #export http_proxy=http://127.0.0.1:8118/
 #export https_proxy=$http_proxy
