@@ -492,6 +492,15 @@ godoc -http=:6060
 
 git config credential.helper store
 
+
+```
+
+## git 合并不关联的历史
+
+```
+
+git pull origin master --allow-unrelated-histories
+
 ```
 
 ## 收藏链接
