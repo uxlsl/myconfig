@@ -126,6 +126,9 @@ sudo sh ./get-docker.sh
 sudo usermod -aG docker lin
 
 pip install youdao --user
+# 使用cow 自动切换代理
+go get github.com/cyfdecyf/cow
+=======
 #godoc -http=:6060
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
