@@ -32,6 +32,7 @@ case "$lsb_dist" in
 		sudo dnf install -y fd-find
 		sudo dnf module install bat  -y
 		sudo dnf install -y gnome-tweak-tool
+		sudo dnf install zeal # 查文档用
 		install_cmd='yum install -y'
 	;;
 	arch)
