@@ -49,6 +49,8 @@ Plug 'mileszs/ack.vim'
 
 Plug 'junegunn/goyo.vim'
 
+Plug 'KabbAmine/zeavim.vim'
+
 " Initialize plugin system
 call plug#end()
 
