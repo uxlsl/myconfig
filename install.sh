@@ -33,6 +33,7 @@ case "$lsb_dist" in
 		sudo dnf module install bat  -y
 		sudo dnf install -y gnome-tweak-tool
 		sudo dnf install zeal # 查文档用
+		sudo dnf install i3 # 查文档用
 		install_cmd='yum install -y'
 	;;
 	arch)
@@ -139,4 +140,9 @@ gem install redis-stat
 
 # 安装clipboard插件
 git clone https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator.git ~/.local/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com
-
+git clone https://github.com/enkore/j4-dmenu-desktop.git
+cd j4-dmenu-desktop &&(
+cmake .
+make
+sudo make install
+)
