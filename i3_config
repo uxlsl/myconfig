@@ -174,3 +174,7 @@ bar {
     position          bottom
     workspace_buttons yes
 }
+
+
+exec --no-startup-id  ibus-daemon -d
+
