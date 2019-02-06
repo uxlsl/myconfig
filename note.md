@@ -526,3 +526,4 @@ http://dongweiming.github.io/Expert-Python/#1
 golang
 https://golangexample.com/
 https://github.com/parnurzeal/gorequest
+[Clog is a channel-based logging package for Go.](https://github.com/go-clog/clog) 
