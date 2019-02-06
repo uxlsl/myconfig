@@ -406,6 +406,16 @@ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | gre
 
 ## golang 
 
+### golang 比软突出特性
+
++ chan 通道
++ defer 
++ func init
++ :=
++ 内嵌类型
+
+
+
 ### http设置请求  
 
 ```go
