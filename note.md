@@ -514,6 +514,8 @@ git pull origin master --allow-unrelated-histories
 ```
 
 ## 收藏链接
+linux
+https://hyper.is/
 
 http://blog.lanyus.com/6.html
 
