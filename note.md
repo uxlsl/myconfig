@@ -414,7 +414,12 @@ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | gre
 + :=
 + 内嵌类型
 
+### golang短声明规则
++ this declaration is in the same scope as the existing declaration of v (if v is already declared in an outer scope, the declaration will create a new variable §),
++ the corresponding value in the initialization is assignable to v, and
+there is at least one other variable in the declaration that is being declared anew.
 
+*声明中至少有其它一个变量将被声明为一个新的变量*
 
 ### http设置请求  
 
