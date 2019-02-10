@@ -420,6 +420,18 @@ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | gre
 there is at least one other variable in the declaration that is being declared anew.
 
 *声明中至少有其它一个变量将被声明为一个新的变量*
+出现地方: 返回值的err
+
+
+### 空白标识符
+过go build 关
+
++ 多重赋值
++ 未使用的导入和变量
++ 副作用式导入
++ 接口检查
+
+
 
 ### http设置请求  
 
