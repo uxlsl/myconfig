@@ -120,7 +120,8 @@ export SHELL='zsh'
 
 # 重定向问题
 export PYTHONIOENCODING='utf8' 
-export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH=$PATH:$(go env GOPATH)/bin
+export GOPATH=$(go env GOPATH)
 export CHEAT_EDITOR=vim
 export EDITOR=vim
 export BETTER_EXCEPTIONS=1  # Linux / OSX
