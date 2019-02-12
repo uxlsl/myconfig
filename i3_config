@@ -185,3 +185,4 @@ bindsym Mod1+Control+l mode "i3lock: Return to lock/Escape to Cancel"
 
 exec --no-startup-id  ibus-daemon -d
 exec --no-startup-id  feh --bg-scale /usr/share/backgrounds/fedora-workstation/aurora-over-iceland.png
+exec --no-startup-id  blueman-applet
