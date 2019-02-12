@@ -177,7 +177,7 @@ bar {
 
 # i3lock
 mode "i3lock: Return to lock/Escape to Cancel" {
-        bindsym Return mode "default" exec i3lock -i /home/owen/image/jpsc_logo.png
+        bindsym Return mode "default" exec i3lock -i /usr/share/backgrounds/fedora-workstation/corn.png
         bindsym Escape mode "default"
 }
 
