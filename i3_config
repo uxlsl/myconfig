@@ -181,8 +181,12 @@ mode "i3lock: Return to lock/Escape to Cancel" {
         bindsym Escape mode "default"
 }
 
-bindsym Mod1+Control+l mode "i3lock: Return to lock/Escape to Cancel"
+bindsym $mod+Control+l mode "i3lock: Return to lock/Escape to Cancel"
+bindsym $Mod+Control+c exec copyq toggle
 
 exec --no-startup-id  ibus-daemon -d
 exec --no-startup-id  feh --bg-scale /usr/share/backgrounds/fedora-workstation/aurora-over-iceland.png
-exec --no-startup-id  blueman-applet
+exec --no-startup-id  /usr/bin/blueman-applet
+exec --no-startup-id  /usr/bin/copyq
+exec --no-startup-id  /usr/bin/sslocal -c /etc/ss.config -d start
+exec --no-startup-id  /usr/bin/cow
