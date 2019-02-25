@@ -503,11 +503,21 @@ chmod +x ovz-bbr-installer.sh
 ./ovz-bbr-installer.sh
 
 ```
-## fedora 开启flatpak
+### fedora 开启flatpak
 
 ```
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+```
+
+### legit提高工作流
+
+同时进行同步本地与服务
+
+```
+
+git sync 
 
 ```
 
