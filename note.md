@@ -521,6 +521,14 @@ git sync
 
 ```
 
+### linux设置max_map_count值(docker elasticsearch 有用)
+
+```
+
+sudo sysctl -w vm.max_map_count=262144
+
+```
+
 ## golang 打开帮助文档
 
 ```
