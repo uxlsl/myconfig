@@ -503,7 +503,13 @@ chmod +x ovz-bbr-installer.sh
 ./ovz-bbr-installer.sh
 
 ```
+## fedora 开启flatpak
 
+```
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+```
 
 ## golang 打开帮助文档
 
