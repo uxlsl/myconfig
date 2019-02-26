@@ -126,3 +126,7 @@ export CHEAT_EDITOR=vim
 export EDITOR=vim
 export BETTER_EXCEPTIONS=1  # Linux / OSX
 
+[[ -s /home/lin/.autojump/etc/profile.d/autojump.sh ]] && source /home/lin/.autojump/etc/profile.d/autojump.sh
+
+autoload -U compinit && compinit -u
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
