@@ -148,3 +148,5 @@ cmake .
 make
 sudo make install
 )
+
+git clone git://github.com/wting/autojump.git && cd autojump && python install.py
