@@ -35,6 +35,7 @@ case "$lsb_dist" in
 		sudo dnf install zeal # 查文档用
 		sudo dnf install i3 # 查文档用
 		sudo dnf install feh # 修改i3配置
+		sudo dnf install neofetch # 使用neofetch获取信息
 		sudo flatpak install flathub com.github.calo001.fondo # 看图片用
 		sudo flatpak install flathub io.dbeaver.DBeaverCommunity  # 数据库客户端
 		install_cmd='yum install -y'
