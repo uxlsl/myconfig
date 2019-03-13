@@ -49,9 +49,13 @@ Plug 'mileszs/ack.vim'
 
 Plug 'junegunn/goyo.vim'
 
+Plug 'fisadev/vim-isort'
+
 Plug 'KabbAmine/zeavim.vim'
 
 Plug 'myusuf3/numbers.vim'
+
+Plug 'ambv/black'
 
 " Initialize plugin system
 call plug#end()
