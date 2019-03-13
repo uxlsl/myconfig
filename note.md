@@ -574,7 +574,8 @@ stackoverflow
 https://stackoverflow.com/questions/7979548/how-to-render-my-textarea-with-wtforms/23256596
 
 python
-http://dongweiming.github.io/Expert-Python/#1
+http://dongweiming.github.io/Expert-Python/
+https://towardsdatascience.com/10-steps-to-set-up-your-python-project-for-success-14ff88b5d13
 
 golang
 https://golangexample.com/
