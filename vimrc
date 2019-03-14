@@ -57,6 +57,8 @@ Plug 'myusuf3/numbers.vim'
 
 Plug 'ambv/black'
 
+Plug 'jiangmiao/auto-pairs'
+
 " Initialize plugin system
 call plug#end()
 
