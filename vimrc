@@ -59,6 +59,8 @@ Plug 'ambv/black'
 
 Plug 'jiangmiao/auto-pairs'
 
+Plug 'w0rp/ale'
+
 " Initialize plugin system
 call plug#end()
 
