@@ -152,3 +152,6 @@ sudo make install
 )
 
 git clone git://github.com/wting/autojump.git && cd autojump && python install.py
+wget https://releases.hyper.is/download/rpm -O hyper.rpm
+sudo rpm ivh hyper.rpm
+hyper i hypercwd
