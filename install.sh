@@ -38,6 +38,8 @@ case "$lsb_dist" in
 		sudo dnf install neofetch # 使用neofetch获取信息
 		sudo flatpak install flathub com.github.calo001.fondo # 看图片用
 		sudo flatpak install flathub io.dbeaver.DBeaverCommunity  # 数据库客户端
+		sudo dnf install snapd
+		sudo snap install robomongo
 		install_cmd='yum install -y'
 	;;
 	arch)
@@ -155,3 +157,4 @@ git clone git://github.com/wting/autojump.git && cd autojump && python install.p
 wget https://releases.hyper.is/download/rpm -O hyper.rpm
 sudo rpm ivh hyper.rpm
 hyper i hypercwd
+sudo mount --bind /data/snapd /var/lib/snapd/
