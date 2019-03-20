@@ -162,10 +162,10 @@ let g:syntastic_check_on_wq = 0
 map <leader>z :Goyo<cr>
 let g:ctrlp_map = '<c-f>'
 
+" https://www.thegeekstuff.com/2008/12/vi-and-vim-autocommand-3-steps-to-add-custom-header-to-your-file/
 autocmd bufnewfile *.py so /home/lin/work/myconfig/python_header.txt
 autocmd bufnewfile *.py exe "1," . 7 . "g/File Name     :.*/s//File Name     : " .expand("%")
 autocmd bufnewfile *.py exe "1," . 7 . "g/Creation Date :.*/s//Creation Date : " .strftime("%Y-%m-%d")
 autocmd Bufwritepre,filewritepre *.py execute "normal ma"
 autocmd Bufwritepre,filewritepre *.py exe "1," . 7 . "g/Last Modified :.*/s/Last Modified :.*/Last Modified : " .strftime("%c")
 autocmd bufwritepost,filewritepost *.py execute "normal `a"
-
