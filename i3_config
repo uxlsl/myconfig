@@ -183,6 +183,7 @@ mode "i3lock: Return to lock/Escape to Cancel" {
 
 bindsym $mod+Control+l mode "i3lock: Return to lock/Escape to Cancel"
 bindsym $Mod+Control+c exec copyq toggle
+bindsym $mod+Tab exec /data/src/i3-wm-scripts/nextfind
 
 exec --no-startup-id  ibus-daemon -d
 exec --no-startup-id  feh --bg-scale /usr/share/backgrounds/fedora-workstation/aurora-over-iceland.png
