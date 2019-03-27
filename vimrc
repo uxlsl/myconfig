@@ -33,8 +33,6 @@ Plug 'altercation/vim-colors-solarized'
 
 Plug 'tomasiser/vim-code-dark'
 
-Plug 'scrooloose/syntastic'
-
 Plug 'ervandew/supertab'
 
 Plug 'townk/vim-autoclose'
@@ -154,10 +152,10 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
 
 map <leader>z :Goyo<cr>
 let g:ctrlp_map = '<c-f>'
@@ -169,3 +167,5 @@ autocmd bufnewfile *.py exe "1," . 7 . "g/Creation Date :.*/s//Creation Date : "
 autocmd Bufwritepre,filewritepre *.py execute "normal ma"
 autocmd Bufwritepre,filewritepre *.py exe "1," . 7 . "g/Last Modified :.*/s/Last Modified :.*/Last Modified : " .strftime("%c")
 autocmd bufwritepost,filewritepost *.py execute "normal `a"
+" 自动检查太烦了,改要时开启就可以 :ALEToggle
+let g:ale_enabled = 0
