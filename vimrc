@@ -33,8 +33,6 @@ Plug 'altercation/vim-colors-solarized'
 
 Plug 'tomasiser/vim-code-dark'
 
-Plug 'scrooloose/syntastic'
-
 Plug 'ervandew/supertab'
 
 Plug 'townk/vim-autoclose'
@@ -49,7 +47,17 @@ Plug 'mileszs/ack.vim'
 
 Plug 'junegunn/goyo.vim'
 
+Plug 'fisadev/vim-isort'
+
 Plug 'KabbAmine/zeavim.vim'
+
+Plug 'myusuf3/numbers.vim'
+
+Plug 'ambv/black'
+
+Plug 'jiangmiao/auto-pairs'
+
+Plug 'w0rp/ale'
 
 " Initialize plugin system
 call plug#end()
@@ -144,7 +152,20 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+
+map <leader>z :Goyo<cr>
+let g:ctrlp_map = '<c-f>'
+
+" https://www.thegeekstuff.com/2008/12/vi-and-vim-autocommand-3-steps-to-add-custom-header-to-your-file/
+autocmd bufnewfile *.py so /home/lin/work/myconfig/python_header.txt
+autocmd bufnewfile *.py exe "1," . 7 . "g/File Name     :.*/s//File Name     : " .expand("%")
+autocmd bufnewfile *.py exe "1," . 7 . "g/Creation Date :.*/s//Creation Date : " .strftime("%Y-%m-%d")
+autocmd Bufwritepre,filewritepre *.py execute "normal ma"
+autocmd Bufwritepre,filewritepre *.py exe "1," . 7 . "g/Last Modified :.*/s/Last Modified :.*/Last Modified : " .strftime("%c")
+autocmd bufwritepost,filewritepost *.py execute "normal `a"
+" 自动检查太烦了,改要时开启就可以 :ALEToggle
+let g:ale_enabled = 0

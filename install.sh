@@ -34,6 +34,12 @@ case "$lsb_dist" in
 		sudo dnf install -y gnome-tweak-tool
 		sudo dnf install zeal # 查文档用
 		sudo dnf install i3 # 查文档用
+		sudo dnf install feh # 修改i3配置
+		sudo dnf install neofetch # 使用neofetch获取信息
+		sudo flatpak install flathub com.github.calo001.fondo # 看图片用
+		sudo flatpak install flathub io.dbeaver.DBeaverCommunity  # 数据库客户端
+		sudo dnf install snapd
+		sudo snap install robomongo
 		install_cmd='yum install -y'
 	;;
 	arch)
@@ -129,9 +135,9 @@ sudo sh ./get-docker.sh
 sudo usermod -aG docker lin
 
 pip install youdao --user
+pip install pipreqs --user
 # 使用cow 自动切换代理
 go get github.com/cyfdecyf/cow
-=======
 #godoc -http=:6060
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
@@ -146,3 +152,9 @@ cmake .
 make
 sudo make install
 )
+
+git clone git://github.com/wting/autojump.git && cd autojump && python install.py
+wget https://releases.hyper.is/download/rpm -O hyper.rpm
+sudo rpm ivh hyper.rpm
+hyper i hypercwd
+sudo mount --bind /data/snapd /var/lib/snapd/

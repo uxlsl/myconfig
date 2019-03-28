@@ -102,6 +102,7 @@ alias docker-gc='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v
 alias -s gz='tar -xzvf' # 快速打开gz文件
 alias -s bz2='tar -xjvf' # 快速打开bz2文件
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+alias www="python -m SimpleHTTPServer 8000"
 
 
 #export http_proxy=http://127.0.0.1:8118/
@@ -126,3 +127,7 @@ export CHEAT_EDITOR=vim
 export EDITOR=vim
 export BETTER_EXCEPTIONS=1  # Linux / OSX
 
+[[ -s /home/lin/.autojump/etc/profile.d/autojump.sh ]] && source /home/lin/.autojump/etc/profile.d/autojump.sh
+
+autoload -U compinit && compinit -u
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3

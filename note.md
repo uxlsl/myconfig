@@ -503,7 +503,31 @@ chmod +x ovz-bbr-installer.sh
 ./ovz-bbr-installer.sh
 
 ```
+### fedora 开启flatpak
 
+```
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+```
+
+### legit提高工作流
+
+同时进行同步本地与服务
+
+```
+
+git sync 
+
+```
+
+### linux设置max_map_count值(docker elasticsearch 有用)
+
+```
+
+sudo sysctl -w vm.max_map_count=262144
+
+```
 
 ## golang 打开帮助文档
 
@@ -533,8 +557,8 @@ git pull origin master --allow-unrelated-histories
 ## 收藏链接
 linux
 https://hyper.is/
-
 http://blog.lanyus.com/6.html
+https://mirror.tuna.tsinghua.edu.cn/help/rpmfusion/ 
 
 nfs
 
@@ -551,7 +575,8 @@ https://stackoverflow.com/questions/7979548/how-to-render-my-textarea-with-wtfor
 https://stackoverflow.com/questions/26649716/how-to-show-pil-image-in-ipython-notebook
 
 python
-http://dongweiming.github.io/Expert-Python/#1
+http://dongweiming.github.io/Expert-Python/
+https://towardsdatascience.com/10-steps-to-set-up-your-python-project-for-success-14ff88b5d13
 
 golang
 https://golangexample.com/
