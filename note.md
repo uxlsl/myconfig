@@ -572,6 +572,7 @@ https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 
 stackoverflow
 https://stackoverflow.com/questions/7979548/how-to-render-my-textarea-with-wtforms/23256596
+https://stackoverflow.com/questions/26649716/how-to-show-pil-image-in-ipython-notebook
 
 python
 http://dongweiming.github.io/Expert-Python/
