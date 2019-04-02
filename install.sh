@@ -39,6 +39,7 @@ case "$lsb_dist" in
 		sudo flatpak install flathub com.github.calo001.fondo # 看图片用
 		sudo flatpak install flathub io.dbeaver.DBeaverCommunity  # 数据库客户端
 		sudo dnf install snapd
+		sudo dnf install golang-googlecode-tools-gopls -y
 		sudo snap install robomongo
 		install_cmd='yum install -y'
 	;;
