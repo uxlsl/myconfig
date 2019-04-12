@@ -169,3 +169,4 @@ autocmd Bufwritepre,filewritepre *.py exe "1," . 7 . "g/Last Modified :.*/s/Last
 autocmd bufwritepost,filewritepost *.py execute "normal `a"
 " 自动检查太烦了,改要时开启就可以 :ALEToggle
 let g:ale_enabled = 0
+autocmd FileType go nnoremap <leader>d :GoDef<CR>
