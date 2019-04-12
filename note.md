@@ -554,6 +554,19 @@ git pull origin master --allow-unrelated-histories
 
 ```
 
+## 使用i3wm的时候多屏输出
+
+```
+
+xrandr --output HDMI1 --auto --left-of eDP1
+
+```
+
+GUI arandr也可以使用
+
+https://wiki.archlinux.org/index.php/Xrandr_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E5%9B%BE%E5%BD%A2%E5%8C%96%E6%93%8D%E4%BD%9C%E7%A8%8B%E5%BA%8F
+
+
 ## 收藏链接
 linux
 https://hyper.is/
