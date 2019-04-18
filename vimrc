@@ -59,6 +59,8 @@ Plug 'jiangmiao/auto-pairs'
 
 Plug 'w0rp/ale'
 
+Plug 'airblade/vim-gitgutter'
+
 " Initialize plugin system
 call plug#end()
 
@@ -170,3 +172,4 @@ autocmd bufwritepost,filewritepost *.py execute "normal `a"
 " 自动检查太烦了,改要时开启就可以 :ALEToggle
 let g:ale_enabled = 0
 autocmd FileType go nnoremap <leader>d :GoDef<CR>
+set updatetime=100
