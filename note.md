@@ -610,3 +610,7 @@ https://github.com/parnurzeal/gorequest
 https://golang.org/doc/code.html
 https://golang.org/doc/effective_go.html
 https://gocn.vip/article/414
+
+zsh
+https://github.com/supercrabtree/k
+https://github.com/zsh-users/zsh-syntax-highlighting

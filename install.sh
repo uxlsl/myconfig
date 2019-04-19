@@ -159,3 +159,4 @@ wget https://releases.hyper.is/download/rpm -O hyper.rpm
 sudo rpm ivh hyper.rpm
 hyper i hypercwd
 sudo mount --bind /data/snapd /var/lib/snapd/
+
