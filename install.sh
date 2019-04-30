@@ -32,14 +32,15 @@ case "$lsb_dist" in
 		sudo dnf install -y fd-find
 		sudo dnf module install bat  -y
 		sudo dnf install -y gnome-tweak-tool
-		sudo dnf install zeal # 查文档用
-		sudo dnf install i3 # 查文档用
-		sudo dnf install feh # 修改i3配置
-		sudo dnf install neofetch # 使用neofetch获取信息
+		sudo dnf install -y zeal # 查文档用
+		sudo dnf install -y i3 # 查文档用
+		sudo dnf install -y feh # 修改i3配置
+		sudo dnf install -y neofetch # 使用neofetch获取信息
 		sudo flatpak install flathub com.github.calo001.fondo # 看图片用
 		sudo flatpak install flathub io.dbeaver.DBeaverCommunity  # 数据库客户端
-		sudo dnf install snapd
+		sudo dnf install -y snapd
 		sudo dnf install golang-googlecode-tools-gopls -y
+		sudo dnf install cloc  -y
 		sudo snap install robomongo
 		install_cmd='yum install -y'
 	;;
