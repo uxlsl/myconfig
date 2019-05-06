@@ -606,6 +606,9 @@ https://mirror.tuna.tsinghua.edu.cn/help/rpmfusion/
 数据库
 设计 https://dbdiagram.io/d
 
+算法参考
+https://www.geeksforgeeks.org/
+
 nfs
 
 https://www.cnblogs.com/mchina/archive/2013/01/03/2840040.html
