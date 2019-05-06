@@ -603,6 +603,9 @@ https://hyper.is/
 http://blog.lanyus.com/6.html
 https://mirror.tuna.tsinghua.edu.cn/help/rpmfusion/ 
 
+数据库
+设计 https://dbdiagram.io/d
+
 nfs
 
 https://www.cnblogs.com/mchina/archive/2013/01/03/2840040.html
