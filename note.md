@@ -539,6 +539,24 @@ export LANGUAGE=en_US.UTF-8
 
 ```
 
+## linux wifi命令行操作
+
+查看命令
+
+```
+
+nmcli dev wifi
+
+```
+
+连接
+
+```
+
+nmcli dev wifi connect AP-SSID password APpassword
+
+```
+
 ## golang 打开帮助文档
 
 ```
