@@ -521,6 +521,18 @@ git sync
 
 ```
 
+
+### Uninstalling a RPM Package with rpm
+
+fedora 删除软件包
+
+```
+
+rpm -qa
+rpm -e 
+
+```
+
 ### linux设置max_map_count值(docker elasticsearch 有用)
 
 ```
