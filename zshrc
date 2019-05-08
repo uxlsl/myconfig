@@ -1,4 +1,5 @@
 source /home/lin/work/myconfig/antigen.zsh
+source $HOME/.local/bin/virtualenvwrapper.sh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -28,6 +29,18 @@ antigen apply
 [[ -s /root/.autojump/etc/profile.d/autojump.sh ]] && source /root/.autojump/etc/profile.d/autojump.sh
 
 PATH=$PATH:/usr/local/go/bin/
+export PYTHONIOENCODING='utf8'
 export PATH
+
+
+
+alias xclip='xclip -selection clipboard'
+alias open=xdg-open
+alias docker-gc='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc spotify/docker-gc'
+
+alias -s gz='tar -xzvf' # 快速打开gz文件
+alias -s bz2='tar -xjvf' # 快速打开bz2文件
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+alias www="python -m SimpleHTTPServer 8000"
 
 autoload -U compinit && compinit -u
