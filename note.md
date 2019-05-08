@@ -392,7 +392,16 @@ export CPPFLAGS=-I/usr/local/opt/openssl/include
 pip install pycurl --compile --no-cache-dir
 
 ```
+### python 的负除法
 
+```
+stack.append(int(float(l) / r))
+# here take care of the case like "1/-22",
+# in Python 2.x, it returns -1, while in
+
+1/-22 = -1
+in leetcode is 0
+```
 ## k8s
 
 
