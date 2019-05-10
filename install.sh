@@ -161,3 +161,7 @@ sudo rpm ivh hyper.rpm
 hyper i hypercwd
 sudo mount --bind /data/snapd /var/lib/snapd/
 
+cd
+git clone https://github.com/gpakosz/.tmux.git
+ln -s -f .tmux/.tmux.conf
+cp .tmux/.tmux.conf.local .
