@@ -25,7 +25,6 @@ antigen theme robbyrussell
 # Tell Antigen that you're done.
 antigen apply
 
-
 [[ -s /root/.autojump/etc/profile.d/autojump.sh ]] && source /root/.autojump/etc/profile.d/autojump.sh
 
 PATH=$PATH:/usr/local/go/bin/
@@ -42,5 +41,5 @@ alias -s gz='tar -xzvf' # 快速打开gz文件
 alias -s bz2='tar -xjvf' # 快速打开bz2文件
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 alias www="python -m SimpleHTTPServer 8000"
-
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 autoload -U compinit && compinit -u
