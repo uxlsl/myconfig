@@ -441,6 +441,27 @@ there is at least one other variable in the declaration that is being declared a
 + 接口检查
 
 
+### golang 一些使用锁的意外
+
+```
+
+func fab() {
+	var a, b int
+	var l sync.Mutex // or sync.RWMutex
+
+	l.Lock()
+	go func() {
+		l.Lock()
+		b = 1
+		l.Unlock()
+	}()
+	go func() {
+		a = 1
+		l.Unlock()
+	}()
+}
+
+```
 
 ### http设置请求  
 
