@@ -4,7 +4,8 @@
 call plug#begin('~/.vim/plugged')
 
 " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+
 
 "" Plugin options
 Plug 'nsf/gocode'
@@ -37,8 +38,6 @@ Plug 'ervandew/supertab'
 
 Plug 'townk/vim-autoclose'
 
-Plug 'plasticboy/vim-markdown'
-
 Plug 'godlygeek/tabular'
 
 Plug 'Yggdroot/indentLine'
@@ -59,7 +58,13 @@ Plug 'jiangmiao/auto-pairs'
 
 Plug 'w0rp/ale'
 
+Plug 'junegunn/gv.vim'
+
+Plug 'flazz/vim-colorschemes'
+
 Plug 'airblade/vim-gitgutter'
+
+Plug 'mbbill/undotree'
 
 " Initialize plugin system
 call plug#end()
@@ -109,7 +114,6 @@ nmap <c-l> <c-w>l
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 autocmd FileType  python autocmd BufWritePre <buffer> %s/\s\+$//e
-autocmd BufWritePre *.py 0,$!yapf
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
@@ -154,22 +158,20 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 map <leader>z :Goyo<cr>
 let g:ctrlp_map = '<c-f>'
 
-" https://www.thegeekstuff.com/2008/12/vi-and-vim-autocommand-3-steps-to-add-custom-header-to-your-file/
 autocmd bufnewfile *.py so /home/lin/work/myconfig/python_header.txt
 autocmd bufnewfile *.py exe "1," . 7 . "g/File Name     :.*/s//File Name     : " .expand("%")
 autocmd bufnewfile *.py exe "1," . 7 . "g/Creation Date :.*/s//Creation Date : " .strftime("%Y-%m-%d")
 autocmd Bufwritepre,filewritepre *.py execute "normal ma"
 autocmd Bufwritepre,filewritepre *.py exe "1," . 7 . "g/Last Modified :.*/s/Last Modified :.*/Last Modified : " .strftime("%c")
 autocmd bufwritepost,filewritepost *.py execute "normal `a"
-" 自动检查太烦了,改要时开启就可以 :ALEToggle
 let g:ale_enabled = 0
+
 autocmd FileType go nnoremap <leader>d :GoDef<CR>
-set updatetime=100
