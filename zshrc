@@ -27,7 +27,7 @@ antigen theme robbyrussell
 # Tell Antigen that you're done.
 antigen apply
 
-[[ -s /root/.autojump/etc/profile.d/autojump.sh ]] && source /root/.autojump/etc/profile.d/autojump.sh
+[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
 
 PATH=$PATH:/usr/local/go/bin/
 
