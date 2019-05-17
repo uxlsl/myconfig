@@ -175,3 +175,5 @@ autocmd bufwritepost,filewritepost *.py execute "normal `a"
 let g:ale_enabled = 0
 
 autocmd FileType go nnoremap <leader>d :GoDef<CR>
+" 自动导入对应的包
+let g:go_fmt_command = "goimports"
