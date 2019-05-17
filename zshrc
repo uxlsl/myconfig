@@ -1,5 +1,6 @@
 source /home/lin/work/myconfig/antigen.zsh
 source $HOME/.local/bin/virtualenvwrapper.sh
+source ~/.autoenv/activate.sh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
