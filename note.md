@@ -676,6 +676,8 @@ https://github.com/parnurzeal/gorequest
 https://golang.org/doc/code.html
 https://golang.org/doc/effective_go.html
 https://gocn.vip/article/414
+https://medium.com/@l.peppoloni/how-to-improve-your-go-code-with-empty-structs-3bd0c66bc531
+https://gfw.go101.org/article/101.html
 
 zsh
 https://github.com/supercrabtree/k
