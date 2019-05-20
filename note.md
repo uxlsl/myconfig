@@ -571,6 +571,14 @@ sudo sysctl -w vm.max_map_count=262144
 
 ```
 
+### 数码相机图片批量处理
+
+```
+
+ufraw-batch *.ARW --out-type=jpeg --compression=99
+
+```
+
 ## 设置英文环境
 
 ```
