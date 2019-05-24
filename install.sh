@@ -168,3 +168,4 @@ cp .tmux/.tmux.conf.local .
 
 # 安装linux brew
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+brew install hub  # 安装github官方cli tools
