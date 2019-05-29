@@ -59,6 +59,7 @@ echo $install_cmd
 $install_cmd git python-pip zsh curl tmux golang
 
 pip install virtualenvwrapper --user
+pip3 install --user termtosvg
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
