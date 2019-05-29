@@ -571,6 +571,14 @@ sudo sysctl -w vm.max_map_count=262144
 
 ```
 
+### 只打印指定的行
+
+```
+
+sed -n "{start},{end}p" file.txt
+
+```
+
 ### 数码相机图片批量处理
 
 ```
