@@ -41,6 +41,7 @@ case "$lsb_dist" in
 		sudo dnf install -y snapd
 		sudo dnf install golang-googlecode-tools-gopls -y
 		sudo dnf install cloc  -y
+		sudo dnf install shutter -y # 截图用到
 		sudo snap install robomongo
 		install_cmd='yum install -y'
 	;;
