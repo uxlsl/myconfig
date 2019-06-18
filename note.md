@@ -541,6 +541,36 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 ```
 
+### fedora 控制 journal 的日志大小
+
+https://unix.stackexchange.com/questions/130786/can-i-remove-files-in-var-log-journal-and-var-cache-abrt-di-usr
+
+```
+
+journalctl --disk-usage
+
+```
+
+
+```
+
+/etc/systemd/journald.conf
+
+```
+
+```
+
+SystemMaxUse=50M
+
+```
+
+
+```
+
+sudo systemctl restart systemd-journald.service
+
+```
+
 ### legit提高工作流
 
 同时进行同步本地与服务
