@@ -46,6 +46,8 @@ alias -s bz2='tar -xjvf' # 快速打开bz2文件
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 alias www="python -m SimpleHTTPServer 8000"
 
+export EDITOR=vim
+
 # fzf 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
