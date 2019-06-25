@@ -130,8 +130,9 @@ cd ngrok && make
 
 # 终端看使用
 #npm install -g vtop
-git clone https://github.com/vim/vim.git
-cd vim &&./configure --with-features=big  --enable-pythoninterp=yes && make && make install
+#git clone https://github.com/vim/vim.git
+#cd vim &&./configure --with-features=big  --enable-pythoninterp=yes && make && make install
+brew install vim
 cd ..
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh ./get-docker.sh
