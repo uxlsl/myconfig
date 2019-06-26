@@ -644,6 +644,14 @@ nmcli dev wifi
 nmcli dev wifi connect AP-SSID password APpassword
 
 ```
+## 清fedora 缓存
+
+```
+
+pkcon refresh force -c -1
+
+
+```
 
 ## golang 打开帮助文档
 
