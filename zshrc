@@ -29,7 +29,8 @@ antigen apply
 
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
 
-PATH=$PATH:/usr/local/go/bin/
+PATH=$PATH:/usr/local/go/bin/:$HOME/.local/bin/
+PATH=/home/linuxbrew/.linuxbrew/bin/:$PATH
 
 export PYTHONIOENCODING='utf8'
 export PATH
@@ -45,6 +46,8 @@ alias -s gz='tar -xzvf' # 快速打开gz文件
 alias -s bz2='tar -xjvf' # 快速打开bz2文件
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 alias www="python -m SimpleHTTPServer 8000"
+alias proxy="proxychains4"
+alias sudo='sudo '  # https://unix.stackexchange.com/questions/148545/why-does-sudo-ignore-aliases
 
 export EDITOR=vim
 
