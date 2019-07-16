@@ -43,7 +43,7 @@ case "$lsb_dist" in
 		sudo dnf install cloc  -y
 		sudo dnf install shutter -y # 截图用到
 		sudo dnf install czmq-devel czmq -y
-		sudo snap install robomongo
+		sudo dnf install google-chrome-stable
 		install_cmd='yum install -y'
 	;;
 	arch)
@@ -169,6 +169,7 @@ cd
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
+cp cow_rc ~/.cow/rc
 
 # 安装linux brew
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
