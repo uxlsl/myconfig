@@ -174,3 +174,11 @@ cp cow_rc ~/.cow/rc
 # 安装linux brew
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 brew install hub  # 安装github官方cli tools
+
+# 安装vscode
+# https://code.visualstudio.com/docs/setup/linux
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+
+dnf check-update
+sudo dnf install code
