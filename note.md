@@ -695,15 +695,15 @@ https://wiki.archlinux.org/index.php/Xrandr_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%8
 
 ## 收藏链接
 linux
-https://hyper.is/
-http://blog.lanyus.com/6.html
-https://mirror.tuna.tsinghua.edu.cn/help/rpmfusion/ 
++ https://hyper.is/
++ http://blog.lanyus.com/6.html
++ https://mirror.tuna.tsinghua.edu.cn/help/rpmfusion/ 
 
 数据库
 设计 https://dbdiagram.io/d
 
 算法参考
-https://www.geeksforgeeks.org/
++ https://www.geeksforgeeks.org/
 
 nfs
 
@@ -711,28 +711,33 @@ https://www.cnblogs.com/mchina/archive/2013/01/03/2840040.html
 
 k8s
 
-https://github.com/kubernetes/dashboard.git
-http://kubernetesbyexample.com/
-https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
++ https://github.com/kubernetes/dashboard.git
++ http://kubernetesbyexample.com/
++ https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 
 stackoverflow
-https://stackoverflow.com/questions/7979548/how-to-render-my-textarea-with-wtforms/23256596
-https://stackoverflow.com/questions/26649716/how-to-show-pil-image-in-ipython-notebook
++ https://stackoverflow.com/questions/7979548/how-to-render-my-textarea-with-wtforms/23256596
++ https://stackoverflow.com/questions/26649716/how-to-show-pil-image-in-ipython-notebook
 
 python
-http://dongweiming.github.io/Expert-Python/
-https://towardsdatascience.com/10-steps-to-set-up-your-python-project-for-success-14ff88b5d13
++ http://dongweiming.github.io/Expert-Python/
++ https://towardsdatascience.com/10-steps-to-set-up-your-python-project-for-success-14ff88b5d13
 
 golang
-https://golangexample.com/
-https://github.com/parnurzeal/gorequest
-[Clog is a channel-based logging package for Go.](https://github.com/go-clog/clog) 
-https://golang.org/doc/code.html
-https://golang.org/doc/effective_go.html
-https://gocn.vip/article/414
-https://medium.com/@l.peppoloni/how-to-improve-your-go-code-with-empty-structs-3bd0c66bc531
-https://gfw.go101.org/article/101.html
++ https://golangexample.com/
++ https://github.com/parnurzeal/gorequest
++ [Clog is a channel-based logging package for Go.](https://github.com/go-clog/clog) 
++ https://golang.org/doc/code.html
++ https://golang.org/doc/effective_go.html
++ https://gocn.vip/article/414
++ https://medium.com/@l.peppoloni/how-to-improve-your-go-code-with-empty-structs-3bd0c66bc531
++ https://gfw.go101.org/article/101.html
 
 zsh
-https://github.com/supercrabtree/k
-https://github.com/zsh-users/zsh-syntax-highlighting
+
++ https://github.com/supercrabtree/k
++ https://github.com/zsh-users/zsh-syntax-highlighting
+
+jupyter 
+
++ https://github.com/jupyter/jupyter/wiki
