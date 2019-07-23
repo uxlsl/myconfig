@@ -1,5 +1,6 @@
+# https://github.com/zsh-users/antigen
+# https://github.com/unixorn/awesome-zsh-plugins
 source /home/lin/work/myconfig/antigen.zsh
-source $HOME/.local/bin/virtualenvwrapper.sh
 source ~/.autoenv/activate.sh
 
 # Load the oh-my-zsh's library.
@@ -15,6 +16,8 @@ antigen bundle command-not-found
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
+antigen bundle voronkovich/gitignore.plugin.zsh
+
 antigen bundle zsh-users/zsh-autosuggestions
 
 antigen bundle Tarrasch/zsh-autoenv
@@ -28,6 +31,10 @@ antigen theme robbyrussell
 antigen apply
 
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
+
+export PATH="/home/lin/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 PATH=$PATH:/usr/local/go/bin/:$HOME/.local/bin/
 PATH=/home/linuxbrew/.linuxbrew/bin/:$PATH
@@ -48,6 +55,8 @@ alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 alias www="python -m SimpleHTTPServer 8000"
 alias proxy="proxychains4"
 alias sudo='sudo '  # https://unix.stackexchange.com/questions/148545/why-does-sudo-ignore-aliases
+alias python='python3'
+alias pip='python3 -m pip'
 
 export EDITOR=vim
 
