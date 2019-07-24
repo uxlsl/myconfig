@@ -185,3 +185,6 @@ sudo dnf install code -y
 # 安装openjdk开发环境
 # http://openjdk.java.net/install/
 sudo dnf install java-1.8.0-openjdk-devel -y
+
+mkdir -p $HOME/.ipython/profile_default/
+cp ipython_config.py $HOME/.ipython/profile_default/
