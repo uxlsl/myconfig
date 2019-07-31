@@ -188,3 +188,7 @@ sudo dnf install java-1.8.0-openjdk-devel -y
 
 mkdir -p $HOME/.ipython/profile_default/
 cp ipython_config.py $HOME/.ipython/profile_default/
+
+wget http://git.io/trans
+chmod +x ./trans
+sudo mv trans /usr/local/bin/
