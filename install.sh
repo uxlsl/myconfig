@@ -190,5 +190,6 @@ mkdir -p $HOME/.ipython/profile_default/
 cp ipython_config.py $HOME/.ipython/profile_default/
 
 wget http://git.io/trans
+# https://github.com/soimort/translate-shell
 chmod +x ./trans
 sudo mv trans /usr/local/bin/
