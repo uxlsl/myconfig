@@ -60,6 +60,10 @@ alias pip='python3 -m pip'
 
 export EDITOR=vim
 
+export GO111MODULE=on
+# Set the GOPROXY environment variable
+export GOPROXY=https://goproxy.io
+
 # fzf 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
