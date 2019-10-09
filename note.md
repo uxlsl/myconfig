@@ -723,6 +723,7 @@ stackoverflow
 python
 + http://dongweiming.github.io/Expert-Python/
 + https://towardsdatascience.com/10-steps-to-set-up-your-python-project-for-success-14ff88b5d13
++ https://pymotw.com/3/
 
 golang
 + https://golangexample.com/
