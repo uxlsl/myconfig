@@ -18,6 +18,14 @@ sudo timedatectl set-ntp true
 
 ```
 
+## vs code 配置
+
+```
+mv ~/.config/Code/User/settings.json ~/.config/Code/User/settings.json.bak
+cp vscode.json ~/.config/Code/User/settings.json
+
+```
+
 
 ## 喜欢的软件
 
