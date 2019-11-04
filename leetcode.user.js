@@ -16,7 +16,7 @@
 
     setTimeout(function (){
         console.log("hello world!")
-
+        $('tr .fa-lock').parents('tr').css('display', 'none')
         $('.reactable-data td a').each(function( index ) {
             var href = $( this ).attr('href')
             if (href in m){
