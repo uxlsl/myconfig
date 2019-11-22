@@ -678,6 +678,14 @@ git pull origin master --allow-unrelated-histories
 
 ```
 
+## git fatal: index-pack failed
+
+```
+
+git config --global core.compression 0
+
+```
+
 ## 使用i3wm的时候多屏输出
 
 ```
