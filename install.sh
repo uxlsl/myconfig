@@ -193,3 +193,5 @@ wget http://git.io/trans
 # https://github.com/soimort/translate-shell
 chmod +x ./trans
 sudo mv trans /usr/local/bin/
+
+brew install onefetch
