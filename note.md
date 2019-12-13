@@ -686,6 +686,15 @@ git config --global core.compression 0
 
 ```
 
+## git 配置显示时间格式
+
+```
+
+git config --global log.date format:’%Y-%m-%d %H:%M:%S’
+
+```
+
+
 ## 使用i3wm的时候多屏输出
 
 ```
