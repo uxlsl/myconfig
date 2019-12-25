@@ -497,6 +497,10 @@ func main() {
 ```
 ## linux 系统
 
+### 开启代理
+
+export ALL_PROXY=socks5://127.0.0.1:1080
+
 显示nfs能加载的
 
 ```
