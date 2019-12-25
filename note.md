@@ -402,6 +402,28 @@ stack.append(int(float(l) / r))
 1/-22 = -1
 in leetcode is 0
 ```
+
+
+### python 一行式
+
+列表辗平
+
+```
+
+ print(list(itertools.chain(*a_list)))
+
+```
+一行式的构造器
+
+```
+class A(object):
+	def __init__(self, a, b, c, d, e, f):
+        self.__dict__.update({k: v for k, v in locals().items() if k != 'self'})
+```
+
+
+
+
 ## k8s
 
 
@@ -689,6 +711,15 @@ git pull origin master --allow-unrelated-histories
 git config --global core.compression 0
 
 ```
+
+## git 配置显示时间格式
+
+```
+
+git config --global log.date format:’%Y-%m-%d %H:%M:%S’
+
+```
+
 
 ## 使用i3wm的时候多屏输出
 
