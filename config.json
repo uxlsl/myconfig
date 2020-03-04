@@ -1,14 +1,30 @@
 {
   "inbounds": [{
-    "port": 80,
+    "port": 24133,
+    "listen": "0.0.0.0",
     "protocol": "vmess",
     "settings": {
       "clients": [
         {
-          "id": "6c4103c1-43a2-4d60-b45c-1e25b454ac57",
-          "level": 1,
+          "id": "5e4fd1ac-a744-4c69-d0d3-0b75eac303b6",
           "alterId": 64
         }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "none",
+      "wsSettings": {
+        "path": "/",
+        "headers": {}
+      }
+    },
+    "tag": "",
+    "sniffing": {
+      "enabled": true,
+      "destOverride": [
+        "http",
+        "tls"
       ]
     }
   }],
