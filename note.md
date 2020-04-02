@@ -201,6 +201,14 @@ PasswordAuthentication 这个选项让ssh-copy-id不能成功
 
 
 ## python
+### jupyter server : not started, no kernel in vs code
+
+1) Press Command+Shift+P to open a new command pallete
+
+2) Type >Python: Select Intepreter to start jupyter notebook server
+
+3) Open the notebook again
+
 
 ### 使用webkit爬取数据
 
