@@ -527,6 +527,20 @@ func main() {
 ```
 ## linux 系统
 
+
+### v2ray 客户端安装
+
+个人建议使用
+
+```
+
+https://qv2ray.github.io/
+https://github.com/v2ray/v2ray-core/releases
+
+```
+
+
+
 ### 开启代理
 
 export ALL_PROXY=socks5://127.0.0.1:1080
