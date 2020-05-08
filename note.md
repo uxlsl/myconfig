@@ -543,6 +543,9 @@ https://github.com/v2ray/v2ray-core/releases
 
 ```
 
+### 为什么TCP4次挥手时等待为2MSL?
+
+https://www.zhihu.com/question/67013338
 
 
 ### 开启代理
