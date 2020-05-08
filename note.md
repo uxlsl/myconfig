@@ -824,5 +824,9 @@ jupyter
 + https://github.com/CyC2018/Markdown-Resume
 + https://github.com/labuladong/fucking-algorithm
 
+python 面试
++ https://github.com/taizilongxu/interview_python
++ https://github.com/kenwoodjw/python_interview_question
+
 杂
 + https://www.justmysocks1.net/members/clientarea.php
