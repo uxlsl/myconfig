@@ -796,5 +796,15 @@ jupyter
 
 + https://github.com/jupyter/jupyter/wiki
 
+
+简历参考
++ https://juejin.im/post/5b2fb0e1f265da59584d98b9
++ https://github.com/resumejob/awesome-resume
++ https://github.com/geekcompany/ResumeSample
++ http://cv.ftqq.com/?fr=github#
++ https://resume.wuhaolin.cn/
++ https://github.com/CyC2018/Markdown-Resume
++ https://github.com/labuladong/fucking-algorithm
+
 杂
 + https://www.justmysocks1.net/members/clientarea.php
