@@ -527,6 +527,24 @@ func main() {
 ```
 ## linux 系统
 
+### ubuntu 必装
+
+apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev
+
+
+### v2ray 客户端安装
+
+个人建议使用
+
+```
+
+https://qv2ray.github.io/
+https://github.com/v2ray/v2ray-core/releases
+
+```
+
+
+
 ### 开启代理
 
 export ALL_PROXY=socks5://127.0.0.1:1080
