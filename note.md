@@ -838,3 +838,4 @@ python 面试
 + 学习git https://learngitbranching.js.org 
 + 练习正则 https://regexone.com/
 + https://sqlzoo.net/
++ https://fullstackopen.com/zh 全栈公开课
