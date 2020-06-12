@@ -112,6 +112,25 @@ docker tag foobar xxxxxxx/foobar
 docker push xxxxxxx/foobar
 
 
+## docker 容器中文环境设置
+
+1.临时修改：
+
+   locale
+
+   locale -a
+
+   LANG=C.UTF-8  (有的是zh_CN.UTF-8，不过我在本地没发现这种编码)
+
+   source /etc/profile
+
+2.永久修改：修改Dockerfile
+
+  在Dockerfile中添加一行
+
+  ENV LANG C.UTF-8
+
+
 ## bash强键参数set
 
 ```
