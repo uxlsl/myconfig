@@ -846,7 +846,8 @@ jupyter
 + https://resume.wuhaolin.cn/
 + https://github.com/CyC2018/Markdown-Resume
 + https://github.com/labuladong/fucking-algorithm
-+ https://github.com/dyweb/awesome-resume-for-chinese
++ https://github.com/dyweb/awesome-resume-for-chinese 
++ https://v3u.cn/book/resume.html
 
 python 面试
 + https://github.com/taizilongxu/interview_python
