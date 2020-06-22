@@ -762,8 +762,28 @@ GUI arandr也可以使用
 
 https://wiki.archlinux.org/index.php/Xrandr_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E5%9B%BE%E5%BD%A2%E5%8C%96%E6%93%8D%E4%BD%9C%E7%A8%8B%E5%BA%8F
 
+## tensorflow 一些记录
+
+tfhub.dev可复用的模型 hub.tensorflow.google.cn
+
+保存模型例子
 
 
+```
+
+saved_model_path = "/tmp/saved_flowers_model"
+tf.saved_model.save(model, saved_model_path)
+
+```
+加载模型例子
+
+```
+
+import tensorflow_hub as hub
+
+model = tf.keras.models.load_model('model_t', custom_objects={'KerasLayer':hub.KerasLayer})
+
+```
 
 ## 收藏链接
 linux
