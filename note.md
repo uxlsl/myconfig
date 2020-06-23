@@ -785,6 +785,14 @@ model = tf.keras.models.load_model('model_t', custom_objects={'KerasLayer':hub.K
 
 ```
 
+```
+# 4个全连接层分别做10分类，分别对应4个字符。
+x = [Dense(10, activation='softmax', name='fc%d'%(i+1))(x) for i in range(4)]
+
+# 4个字符向量拼接在一起，与标签向量形式一致，作为模型输出。
+outs = Concatenate()(x)
+```
+
 ## 收藏链接
 linux
 + https://hyper.is/
