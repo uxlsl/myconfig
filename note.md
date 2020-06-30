@@ -767,7 +767,14 @@ git config --global core.compression 0
 git config --global log.date format:’%Y-%m-%d %H:%M:%S’
 
 ```
+## git中文问题
 
+
+```
+
+git config --global core.quotepath false
+
+```
 
 ## 使用i3wm的时候多屏输出
 
