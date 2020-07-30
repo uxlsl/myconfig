@@ -860,3 +860,9 @@ python 面试
 + https://sqlzoo.net/
 + https://fullstackopen.com/zh 全栈公开课
 + https://github.com/1c7/chinese-independent-developer 独立app开发者
+
+electron
+
++ https://www.tutorialspoint.com/electron/electron_building_uis.htm
++ https://cubettech.com/resources/blog/beginners-guide-on-electron/
++ https://anadea.info/blog/building-desktop-app-with-electron
