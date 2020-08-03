@@ -860,6 +860,8 @@ python 面试
 + https://sqlzoo.net/
 + https://fullstackopen.com/zh 全栈公开课
 + https://github.com/1c7/chinese-independent-developer 独立app开发者
++ https://github.com/timqian/chart.xkcd
++ https://github.com/jwilber/roughViz
 
 electron
 
