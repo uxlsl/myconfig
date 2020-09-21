@@ -819,6 +819,17 @@ x = [Dense(10, activation='softmax', name='fc%d'%(i+1))(x) for i in range(4)]
 outs = Concatenate()(x)
 ```
 
+
+
+## You need Wkhtmltopdf to print a pdf version of the reports. 
+
+```
+
+sudo apt-get install -y wkhtmltopdf
+
+```
+
+
 ## 收藏链接
 linux
 + https://hyper.is/
