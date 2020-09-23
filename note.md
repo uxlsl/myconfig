@@ -767,7 +767,14 @@ git config --global core.compression 0
 git config --global log.date format:’%Y-%m-%d %H:%M:%S’
 
 ```
+## git中文问题
 
+
+```
+
+git config --global core.quotepath false
+
+```
 
 ## 使用i3wm的时候多屏输出
 
@@ -781,6 +788,36 @@ GUI arandr也可以使用
 
 https://wiki.archlinux.org/index.php/Xrandr_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E5%9B%BE%E5%BD%A2%E5%8C%96%E6%93%8D%E4%BD%9C%E7%A8%8B%E5%BA%8F
 
+## tensorflow 一些记录
+
+tfhub.dev可复用的模型 hub.tensorflow.google.cn
+
+保存模型例子
+
+
+```
+
+saved_model_path = "/tmp/saved_flowers_model"
+tf.saved_model.save(model, saved_model_path)
+
+```
+加载模型例子
+
+```
+
+import tensorflow_hub as hub
+
+model = tf.keras.models.load_model('model_t', custom_objects={'KerasLayer':hub.KerasLayer})
+
+```
+
+```
+# 4个全连接层分别做10分类，分别对应4个字符。
+x = [Dense(10, activation='softmax', name='fc%d'%(i+1))(x) for i in range(4)]
+
+# 4个字符向量拼接在一起，与标签向量形式一致，作为模型输出。
+outs = Concatenate()(x)
+```
 
 ## eclipse自动补全的设置
 　最简单的修改方式是：Windows——>Preferences——>Java-->Editor-->Content Asist，在Auto activation triggers for Java后面的文本框里只有一个“.”。现在你将其改为“.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ”即可
@@ -806,6 +843,15 @@ driver.get('http://exercise.kingname.info')
 
 
 ```
+
+## You need Wkhtmltopdf to print a pdf version of the reports. 
+
+```
+
+sudo apt-get install -y wkhtmltopdf
+
+```
+
 
 ## 收藏链接
 linux
