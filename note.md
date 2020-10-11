@@ -823,6 +823,19 @@ outs = Concatenate()(x)
 　最简单的修改方式是：Windows——>Preferences——>Java-->Editor-->Content Asist，在Auto activation triggers for Java后面的文本框里只有一个“.”。现在你将其改为“.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ”即可
 
 
+## ipython autoreload
+
+
+
+```
+
+%load_ext autoreload
+%autoreload 2
+
+
+```
+
+
 ## selenium 检测
 
 ```
@@ -846,11 +859,14 @@ driver.get('http://exercise.kingname.info')
 
 ## You need Wkhtmltopdf to print a pdf version of the reports. 
 
+
 ```
 
 sudo apt-get install -y wkhtmltopdf
 
 ```
+
+
 
 
 ## 收藏链接
