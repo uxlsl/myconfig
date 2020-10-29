@@ -867,6 +867,16 @@ sudo apt-get install -y wkhtmltopdf
 ```
 
 
+## 限速
+
+
+```
+
+示例: $ sudo wondershaper eth0 100 20 （限制eth0网卡下载速度100K，上传速度20K）
+示例:   $ sudo wondershaper clear eth0    (清除eth0网卡的网速限制） 
+
+```
+
 
 
 ## 收藏链接
