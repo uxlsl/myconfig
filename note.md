@@ -963,6 +963,7 @@ python 面试
 python 混淆
 + https://zhuanlan.zhihu.com/p/54296517
 + https://pyob.oxyry.com/
++ https://stackoverflow.com/questions/7475223/mysql-config-not-found-when-installing-mysqldb-python-interface
 
 electron
 
@@ -970,4 +971,4 @@ electron
 + https://cubettech.com/resources/blog/beginners-guide-on-electron/
 + https://anadea.info/blog/building-desktop-app-with-electron
 
-
+m
