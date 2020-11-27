@@ -877,6 +877,14 @@ sudo apt-get install -y wkhtmltopdf
 
 ```
 
+## gradlew 
+
+```
+
+export TERM=xterm-color
+gradlew ParallelPrime
+
+```
 
 
 ## 收藏链接
