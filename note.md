@@ -877,6 +877,19 @@ sudo apt-get install -y wkhtmltopdf
 
 ```
 
+## ipython 报错问题
+
+
+```
+
+# https://github.com/ipython/ipython/issues/12740
+
+pip install jedi==0.17.2
+
+
+```
+
+
 ## gradlew 
 
 ```
