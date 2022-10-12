@@ -66,6 +66,15 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'mbbill/undotree'
 
+Plug 'rhysd/vim-clang-format'
+
+Plug 'Valloric/YouCompleteMe'
+
+Plug 'racer-rust/vim-racer'
+
+Plug 'APZelos/blamer.nvim'
+
+
 " Initialize plugin system
 call plug#end()
 
