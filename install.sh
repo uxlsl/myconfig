@@ -198,3 +198,7 @@ brew install onefetch
 
 git config --global http.proxy 'socks5://127.0.0.1:1080'
 git config --global https.proxy 'socks5://127.0.0.1:1080'
+
+wget https://github.com/sharkdp/bat/releases/download/v0.18.1/bat-musl_0.18.1_amd64.deb
+
+sudo dpkg -i bat-musl_0.18.1_amd64.deb
